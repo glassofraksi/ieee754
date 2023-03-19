@@ -46,7 +46,7 @@ class IEEE754:
     @staticmethod
     def integer2binary(x):
         b = np.empty((0,), dtype=int)
-        while x > 0:
+        while x > 1:
             b = np.append(b, np.array([x % 2]))
             x = int(x/2)
         b = np.append(b, np.array([x]))
